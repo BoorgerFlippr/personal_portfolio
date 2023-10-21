@@ -7,9 +7,9 @@ export default function NavBar() {
         <Navbar bg="light">
         <Container>
             <Nav className="m-auto">
-                <Link href='/' className="nav-link">Home</Link>
-                <Link href='/' className="nav-link">Portfolio</Link>
-                <Link href='/' className="nav-link">Bio</Link>
+                <Link href='#home' className="nav-link">Home</Link>
+                <Link href='#portfolio' className="nav-link">Portfolio</Link>
+                <Link href='#biography' className="nav-link">Bio</Link>
             </Nav>
         </Container>
         </Navbar>
