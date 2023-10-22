@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px){
+  .container {
+    flex-direction: column;
+  }
+}
+
+.leftHalf {
+  flex: 1;
+  padding: 1rem;
+}
+
+.rightHalf {
+  flex: 1;
+  padding: 1rem;
+}
