@@ -18,3 +18,23 @@
   flex: 1;
   padding: 1rem;
 }
+
+.portfolio_pic {
+  width: 350px;
+  height: 250px;
+  border-radius: 10%;
+}
+
+.portfolio_container {
+  display: block;
+}
+
+
+
+@media (min-width: 768px){
+  .portfolio_container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
