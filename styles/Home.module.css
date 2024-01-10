@@ -19,16 +19,52 @@
   padding: 1rem;
 }
 
+.effect_container {
+  position: relative;
+  width: 50%;
+}
+
 .portfolio_pic {
-  width: 350px;
-  height: 250px;
   border-radius: 10%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; 
+}
+
+.effect_container:hover .portfolio_pic{
+  opacity: 0.3;
+}
+
+.effect_container:hover .middle{
+  opacity: 1;
+}
+
+.text{
+  color: blackcd ;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 .portfolio_container {
   display: block;
 }
 
+.div_full {
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+}
 
 
 @media (min-width: 768px){
